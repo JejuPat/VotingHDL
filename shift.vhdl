@@ -10,7 +10,7 @@ entity shift is
         i_a, i_b, i_c, i_d  : in std_logic_vector(3 downto 0);
         i_bs                : in std_logic_vector(1 downto 0);
         i_r                 : in std_logic_vector(1 downto 0);
-        o_shift             : out std_logic_vector(3 downto 0);
+        o_shift             : out std_logic_vector(3 downto 0)
     );
 end entity;
 
