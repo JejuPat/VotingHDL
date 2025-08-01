@@ -49,14 +49,14 @@ module swap
 
         for (i = 0; i < TAG_SIZE; i = i + 1) begin
             if (i < s) begin
-                seg1[i] = block1[(px + i) % TAG_SIZE];
-                seg2[i] = block2[(py + i) % TAG_SIZE];
+                seg1[i] = block1[(px % TAG_SIZE + i) % TAG_SIZE];
+                seg2[i] = block2[(py % TAG_SIZE + i) % TAG_SIZE];
             end
         end
         for (i = 0; i < TAG_SIZE; i = i + 1) begin
            if (i < s) begin
-               new_block1[(px + i) % TAG_SIZE] = seg2[i];
-               new_block2[(py + i) % TAG_SIZE] = seg1[i];
+               new_block1[(px % TAG_SIZE + i) % TAG_SIZE] = seg2[i];
+               new_block2[(py % TAG_SIZE + i) % TAG_SIZE] = seg1[i];
            end
         end 
     end
