@@ -20,16 +20,16 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module swap
-#(parameter TAG_SIZE=4, RECORD_SIZE=16, SECRET_KEY_SIZE=16, CEIL2_TAG=2)
+#(parameter TAG_SIZE=4, RECORD_SIZE=16, SECRET_KEY_SIZE=16, CEIL2_TAG=$clog2(TAG_SIZE), CEIL2_BLOCK=$clog2(RECORD_SIZE/TAG_SIZE))
 (input clk, input reset, input [RECORD_SIZE-1:0] i_record, input [SECRET_KEY_SIZE-1:0] secret_key, output [RECORD_SIZE-1:0] o_record);
-	//wire [CEIL2_TAG - 1:0] bf = secret_key[CEIL2_TAG - 1:0];
-	wire [CEIL2_TAG - 1:0] bx = secret_key[CEIL2_TAG* 2 - 1:CEIL2_TAG];
-	wire [CEIL2_TAG - 1:0] by = secret_key[CEIL2_TAG * 3 - 1:CEIL2_TAG*2 ];
-	wire [CEIL2_TAG - 1:0] px = secret_key[CEIL2_TAG * 4 - 1:CEIL2_TAG*3];
-	wire [CEIL2_TAG - 1:0] py = secret_key[CEIL2_TAG * 5 - 1:CEIL2_TAG*4];
-    wire [CEIL2_TAG - 1:0] s = secret_key[CEIL2_TAG * 6 - 1:CEIL2_TAG*5];
-	//wire [CEIL2_TAG - 1:0] r = secret_key[CEIL2_TAG * 7 - 1:CEIL2_TAG*6];
-	//wire [CEIL2_TAG - 1:0] bs = = secret_key[CEIL2_TAG * 8 - 1:CEIL2_TAG*7];
+	wire [CEIL2_BLOCK - 1:0] bf = secret_key[CEIL2_BLOCK - 1:0];
+	wire [CEIL2_BLOCK - 1:0] bx = secret_key[CEIL2_BLOCK* 2 - 1:CEIL2_BLOCK];
+	wire [CEIL2_BLOCK - 1:0] by = secret_key[CEIL2_BLOCK * 3 - 1:CEIL2_BLOCK*2 ];
+	wire [CEIL2_TAG - 1:0] px = secret_key[CEIL2_BLOCK * 3 + CEIL2_TAG - 1:CEIL2_BLOCK*3];
+	wire [CEIL2_TAG - 1:0] py = secret_key[CEIL2_BLOCK * 3 + CEIL2_TAG * 2 - 1:CEIL2_BLOCK * 3 + CEIL2_TAG];
+    wire [CEIL2_TAG - 1:0] s = secret_key[CEIL2_BLOCK * 3 + CEIL2_BLOCK * 3 - 1:CEIL2_BLOCK * 3 + CEIL2_TAG * 2];
+	wire [CEIL2_TAG - 1:0] r = secret_key[CEIL2_BLOCK * 3 + CEIL2_TAG * 4 - 1:CEIL2_BLOCK * 3 + CEIL2_TAG * 3];
+	wire [CEIL2_BLOCK - 1:0] bs = secret_key[CEIL2_BLOCK * 3 + CEIL2_TAG * 5 - 1:CEIL2_BLOCK * 3 + CEIL2_TAG * 4];
 
 	//wire [TAG_SIZE-1:0] block1 = i_record[TAG_SIZE*(bx+1) - 1:TAG_SIZE*bx];
     wire [TAG_SIZE-1:0] block1 = i_record[TAG_SIZE*bx+:TAG_SIZE];
@@ -73,14 +73,3 @@ module swap
 
 
 endmodule
-
-
-
-
-
-
-
-
-
-
-
