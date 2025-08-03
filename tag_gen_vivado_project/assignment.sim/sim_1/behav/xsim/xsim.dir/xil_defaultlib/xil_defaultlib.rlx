@@ -2,11 +2,10 @@
 2020.2
 Oct 14 2022
 05:20:55
-C:/Users/Admin/Documents/Uni/COMP3211/Assignment/assignment/assignment.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
-C:/Users/Admin/Documents/Uni/COMP3211/Assignment/assignment/assignment.srcs/sim_1/new/tb_flip.vhd,1754218200,vhdl,,,,tb_flip,,,,,,,,
-C:/Users/Admin/Documents/Uni/COMP3211/Assignment/assignment/assignment.srcs/sim_1/new/tb_tag_generator.vhd,1754218872,vhdl,,,,tb_tag_generator,,,,,,,,
-C:/Users/Admin/Documents/Uni/COMP3211/Assignment/assignment/assignment.srcs/sources_1/imports/COMP3211/Assignment/VotingHDL/shift.vhd,1754026417,vhdl,,,,shift,,,,,,,,
-C:/Users/Admin/Documents/Uni/COMP3211/Assignment/assignment/assignment.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/imports/VotingHDL/XOR_stage.vhd,1754198796,vhdl,,,,xor_stage,,,,,,,,
-C:/Users/Admin/Documents/Uni/COMP3211/Assignment/assignment/assignment.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/new/flip.vhd,1754218038,vhdl,,,,flip,,,,,,,,
-C:/Users/Admin/Documents/Uni/COMP3211/Assignment/assignment/assignment.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/new/tag_gen.vhd,1754218900,vhdl,,,,tag_generator,,,,,,,,
-C:/Users/Admin/Documents/Uni/COMP3211/Assignment/assignment/assignment.srcs/sources_1/imports/VotingHDL/swap.v,1754198191,verilog,,,,swap,,,,,,,,
+C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sim_1/new/tb_tag_generator.vhd,1754218872,vhdl,,,,tb_tag_generator,,,,,,,,
+C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Assignment/VotingHDL/shift.vhd,1754026417,vhdl,,,,shift,,,,,,,,
+C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/imports/VotingHDL/XOR_stage.vhd,1754232998,vhdl,,,,xor_stage,,,,,,,,
+C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/new/flip.vhd,1754218038,vhdl,,,,flip,,,,,,,,
+C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/new/tag_gen.vhd,1754232906,vhdl,,,,tag_generator,,,,,,,,
+C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sources_1/imports/VotingHDL/swap.v,1754232706,verilog,,,,swap,,,,,,,,

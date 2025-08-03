@@ -38,15 +38,18 @@ architecture Behavioral of tag_generator is
     end component;
 
     component swap
-        generic (TAG_SIZE : integer; RECORD_SIZE : integer; SECRET_KEY_SIZE : integer);
+        generic (
+            TAG_SIZE        : integer;
+            RECORD_SIZE     : integer;
+            SECRET_KEY_SIZE : integer
+        );
         port (
-            clk        : in  std_logic;
-            reset      : in  std_logic;
             i_record   : in  std_logic_vector(RECORD_SIZE - 1 downto 0);
             secret_key : in  std_logic_vector(SECRET_KEY_SIZE - 1 downto 0);
             o_record   : out std_logic_vector(RECORD_SIZE - 1 downto 0)
         );
     end component;
+
 
     component shift
         generic (EXTENDED_SIZE : natural; TAG_SIZE : natural; KEY_SIZE : natural);
@@ -58,10 +61,13 @@ architecture Behavioral of tag_generator is
     end component;
 
     component XOR_stage
-        generic (TAG_SIZE : integer);
+        generic (
+            TAG_SIZE : natural;
+            PADDED_RECORD_SIZE : natural
+        );
         port (
-            in_a, in_b, in_c, in_d : in  std_logic_vector(TAG_SIZE - 1 downto 0);
-            xor_result             : out std_logic_vector(TAG_SIZE - 1 downto 0)
+            shifted_record : in  std_logic_vector(PADDED_RECORD_SIZE - 1 downto 0);
+            xor_result     : out std_logic_vector(TAG_SIZE - 1 downto 0)
         );
     end component;
 
@@ -85,12 +91,11 @@ begin
     swap_inst: swap
         generic map (TAG_SIZE => T, RECORD_SIZE => EXTENDED_SIZE, SECRET_KEY_SIZE => S)
         port map (
-            clk        => '0',
-            reset      => '0',
             i_record   => flip_record,
             secret_key => secret,
             o_record   => swap_record
         );
+
 
     shift_inst: shift
         generic map (EXTENDED_SIZE => EXTENDED_SIZE, TAG_SIZE => T, KEY_SIZE => S)
@@ -101,13 +106,13 @@ begin
         );
 
     xor_inst: XOR_stage
-        generic map (TAG_SIZE => T)
+        generic map (
+            TAG_SIZE            => T,
+            PADDED_RECORD_SIZE  => EXTENDED_SIZE
+        )
         port map (
-            in_a => shift_record(T * 4 - 1 downto T * 3),
-            in_b => shift_record(T * 3 - 1 downto T * 2),
-            in_c => shift_record(T * 2 - 1 downto T * 1),
-            in_d => shift_record(T * 1 - 1 downto T * 0),
-            xor_result => tag_out
+            shifted_record => shift_record,
+            xor_result     => tag_out
         );
 
 end Behavioral;

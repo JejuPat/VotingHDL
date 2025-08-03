@@ -64,24 +64,27 @@ IKI_DLLESPEC extern void execute_8(char*, char *);
 IKI_DLLESPEC extern void execute_9(char*, char *);
 IKI_DLLESPEC extern void execute_10(char*, char *);
 IKI_DLLESPEC extern void execute_11(char*, char *);
-IKI_DLLESPEC extern void execute_38(char*, char *);
+IKI_DLLESPEC extern void execute_46(char*, char *);
 IKI_DLLESPEC extern void execute_26(char*, char *);
 IKI_DLLESPEC extern void execute_29(char*, char *);
 IKI_DLLESPEC extern void execute_31(char*, char *);
-IKI_DLLESPEC extern void execute_32(char*, char *);
-IKI_DLLESPEC extern void execute_41(char*, char *);
-IKI_DLLESPEC extern void execute_42(char*, char *);
-IKI_DLLESPEC extern void execute_43(char*, char *);
-IKI_DLLESPEC extern void execute_44(char*, char *);
-IKI_DLLESPEC extern void execute_45(char*, char *);
-IKI_DLLESPEC extern void execute_46(char*, char *);
-IKI_DLLESPEC extern void execute_47(char*, char *);
-IKI_DLLESPEC extern void execute_48(char*, char *);
 IKI_DLLESPEC extern void execute_49(char*, char *);
 IKI_DLLESPEC extern void execute_50(char*, char *);
 IKI_DLLESPEC extern void execute_51(char*, char *);
-IKI_DLLESPEC extern void execute_35(char*, char *);
+IKI_DLLESPEC extern void execute_52(char*, char *);
+IKI_DLLESPEC extern void execute_53(char*, char *);
+IKI_DLLESPEC extern void execute_54(char*, char *);
+IKI_DLLESPEC extern void execute_55(char*, char *);
+IKI_DLLESPEC extern void execute_56(char*, char *);
+IKI_DLLESPEC extern void execute_57(char*, char *);
+IKI_DLLESPEC extern void execute_58(char*, char *);
+IKI_DLLESPEC extern void execute_59(char*, char *);
+IKI_DLLESPEC extern void execute_34(char*, char *);
+IKI_DLLESPEC extern void execute_45(char*, char *);
 IKI_DLLESPEC extern void execute_37(char*, char *);
+IKI_DLLESPEC extern void execute_39(char*, char *);
+IKI_DLLESPEC extern void execute_41(char*, char *);
+IKI_DLLESPEC extern void execute_43(char*, char *);
 IKI_DLLESPEC extern void vlog_transfunc_eventcallback(char*, char*, unsigned, unsigned, unsigned, char *);
 IKI_DLLESPEC extern void transaction_35(char*, char*, unsigned, unsigned, unsigned);
 IKI_DLLESPEC extern void vhdl_transfunc_eventcallback(char*, char*, unsigned, unsigned, unsigned, char *);
@@ -90,18 +93,14 @@ IKI_DLLESPEC extern void transaction_39(char*, char*, unsigned, unsigned, unsign
 IKI_DLLESPEC extern void transaction_42(char*, char*, unsigned, unsigned, unsigned);
 IKI_DLLESPEC extern void transaction_43(char*, char*, unsigned, unsigned, unsigned);
 IKI_DLLESPEC extern void transaction_44(char*, char*, unsigned, unsigned, unsigned);
-IKI_DLLESPEC extern void transaction_45(char*, char*, unsigned, unsigned, unsigned);
-IKI_DLLESPEC extern void transaction_46(char*, char*, unsigned, unsigned, unsigned);
-IKI_DLLESPEC extern void transaction_47(char*, char*, unsigned, unsigned, unsigned);
-IKI_DLLESPEC extern void transaction_48(char*, char*, unsigned, unsigned, unsigned);
-funcp funcTab[40] = {(funcp)execute_2, (funcp)execute_3, (funcp)execute_4, (funcp)execute_5, (funcp)execute_6, (funcp)execute_7, (funcp)execute_8, (funcp)execute_9, (funcp)execute_10, (funcp)execute_11, (funcp)execute_38, (funcp)execute_26, (funcp)execute_29, (funcp)execute_31, (funcp)execute_32, (funcp)execute_41, (funcp)execute_42, (funcp)execute_43, (funcp)execute_44, (funcp)execute_45, (funcp)execute_46, (funcp)execute_47, (funcp)execute_48, (funcp)execute_49, (funcp)execute_50, (funcp)execute_51, (funcp)execute_35, (funcp)execute_37, (funcp)vlog_transfunc_eventcallback, (funcp)transaction_35, (funcp)vhdl_transfunc_eventcallback, (funcp)transaction_38, (funcp)transaction_39, (funcp)transaction_42, (funcp)transaction_43, (funcp)transaction_44, (funcp)transaction_45, (funcp)transaction_46, (funcp)transaction_47, (funcp)transaction_48};
-const int NumRelocateId= 40;
+funcp funcTab[39] = {(funcp)execute_2, (funcp)execute_3, (funcp)execute_4, (funcp)execute_5, (funcp)execute_6, (funcp)execute_7, (funcp)execute_8, (funcp)execute_9, (funcp)execute_10, (funcp)execute_11, (funcp)execute_46, (funcp)execute_26, (funcp)execute_29, (funcp)execute_31, (funcp)execute_49, (funcp)execute_50, (funcp)execute_51, (funcp)execute_52, (funcp)execute_53, (funcp)execute_54, (funcp)execute_55, (funcp)execute_56, (funcp)execute_57, (funcp)execute_58, (funcp)execute_59, (funcp)execute_34, (funcp)execute_45, (funcp)execute_37, (funcp)execute_39, (funcp)execute_41, (funcp)execute_43, (funcp)vlog_transfunc_eventcallback, (funcp)transaction_35, (funcp)vhdl_transfunc_eventcallback, (funcp)transaction_38, (funcp)transaction_39, (funcp)transaction_42, (funcp)transaction_43, (funcp)transaction_44};
+const int NumRelocateId= 39;
 
 void relocate(char *dp)
 {
-	iki_relocate(dp, "xsim.dir/tb_tag_generator_behav/xsim.reloc",  (void **)funcTab, 40);
-	iki_vhdl_file_variable_register(dp + 14608);
-	iki_vhdl_file_variable_register(dp + 14664);
+	iki_relocate(dp, "xsim.dir/tb_tag_generator_behav/xsim.reloc",  (void **)funcTab, 39);
+	iki_vhdl_file_variable_register(dp + 14184);
+	iki_vhdl_file_variable_register(dp + 14240);
 
 
 	/*Populate the transaction function pointer field in the whole net structure */
@@ -117,13 +116,9 @@ void simulate(char *dp)
 		iki_schedule_processes_at_time_zero(dp, "xsim.dir/tb_tag_generator_behav/xsim.reloc");
 	// Initialize Verilog nets in mixed simulation, for the cases when the value at time 0 should be propagated from the mixed language Vhdl net
 
-	iki_vlog_schedule_transaction_signal_fast_vhdl_value_time_0(dp + 20656, dp + 21440, 0, 0, 0, 0, 1, 1);
+	iki_vlog_schedule_transaction_signal_fast_vhdl_value_time_0(dp + 20072, dp + 20904, 0, 15, 0, 15, 16, 1);
 
-	iki_vlog_schedule_transaction_signal_fast_vhdl_value_time_0(dp + 20712, dp + 21496, 0, 0, 0, 0, 1, 1);
-
-	iki_vlog_schedule_transaction_signal_fast_vhdl_value_time_0(dp + 20496, dp + 21552, 0, 15, 0, 15, 16, 1);
-
-	iki_vlog_schedule_transaction_signal_fast_vhdl_value_time_0(dp + 19976, dp + 21608, 0, 15, 0, 15, 16, 1);
+	iki_vlog_schedule_transaction_signal_fast_vhdl_value_time_0(dp + 19552, dp + 20960, 0, 15, 0, 15, 16, 1);
 	iki_execute_processes();
 
 	// Schedule resolution functions for the multiply driven Verilog nets that have strength
