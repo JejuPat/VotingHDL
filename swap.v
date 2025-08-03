@@ -21,7 +21,7 @@
 
 module swap
 #(parameter TAG_SIZE=4, RECORD_SIZE=16, SECRET_KEY_SIZE=16, CEIL2_TAG=$clog2(TAG_SIZE), CEIL2_BLOCK=$clog2(RECORD_SIZE/TAG_SIZE))
-(input clk, input reset, input [RECORD_SIZE-1:0] i_record, input [SECRET_KEY_SIZE-1:0] secret_key, output [RECORD_SIZE-1:0] o_record);
+(input [RECORD_SIZE-1:0] i_record, input [SECRET_KEY_SIZE-1:0] secret_key, output [RECORD_SIZE-1:0] o_record);
 	wire [CEIL2_BLOCK - 1:0] bf = secret_key[CEIL2_BLOCK - 1:0];
 	wire [CEIL2_BLOCK - 1:0] bx = secret_key[CEIL2_BLOCK* 2 - 1:CEIL2_BLOCK];
 	wire [CEIL2_BLOCK - 1:0] by = secret_key[CEIL2_BLOCK * 3 - 1:CEIL2_BLOCK*2 ];
@@ -44,23 +44,35 @@ module swap
     integer i;
     reg [TAG_SIZE-1:0] seg1, seg2;
     always @* begin
-        new_block1 = block1;
-        new_block2 = block2;
-
         for (i = 0; i < TAG_SIZE; i = i + 1) begin
-            if (i < s) begin
+            if (i < (s)) begin
                 seg1[i] = block1[(px % TAG_SIZE + i) % TAG_SIZE];
                 seg2[i] = block2[(py % TAG_SIZE + i) % TAG_SIZE];
             end
         end
+        new_block1 = block1;
+        new_block2 = block2;
+        
         for (i = 0; i < TAG_SIZE; i = i + 1) begin
-           if (i < s) begin
+           if (i < (s)) begin
                new_block1[(px % TAG_SIZE + i) % TAG_SIZE] = seg2[i];
                new_block2[(py % TAG_SIZE + i) % TAG_SIZE] = seg1[i];
            end
-        end 
+        end
+       
+        modified_record = i_record;
+        modified_record[TAG_SIZE*(bx)+:TAG_SIZE] = new_block1;
+        modified_record[TAG_SIZE*(by)+:TAG_SIZE] = new_block2;
+//        for (i = 0; i < RECORD_SIZE/TAG_SIZE; i++) if
+//        end
     end
-
+    
+    
+    
+    
+    
+    
+/*
     always @(posedge clk or posedge reset) begin
         if (reset) begin
             modified_record <= {RECORD_SIZE{1'b0}};
@@ -70,6 +82,6 @@ module swap
             modified_record[TAG_SIZE*(by)+:TAG_SIZE] <= new_block2;
         end
     end
-
+*/
 
 endmodule
