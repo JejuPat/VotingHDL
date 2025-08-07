@@ -14,9 +14,9 @@ end secret_memory_auto;
 architecture Behavioral of secret_memory_auto is
   type mem_type is array(0 to 255) of std_logic_vector(19 downto 0);
   signal mem : mem_type := (
-    0 => x"ABCDE",
-    1 => x"12345",
-    2 => x"0F0F0",
+    0 => "11101000010110010000",
+    1 => "11101000010110010000",
+    2 => "11101000010110010000",
     others => (others => '0')
   );
 

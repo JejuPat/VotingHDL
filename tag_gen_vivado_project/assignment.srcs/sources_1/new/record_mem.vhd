@@ -14,9 +14,11 @@ end record_memory_auto;
 architecture Behavioral of record_memory_auto is
   type mem_type is array(0 to 255) of std_logic_vector(15 downto 0);
   signal mem : mem_type := (
-    0 => x"A486",
-    1 => x"144B",
-    2 => x"0F1C",
+    0 => x"B2CF",
+    1 => x"1C5C",
+    2 => x"C376",
+    3 => x"236A",
+    4 => x"F0B9",
     others => (others => '0')
   );
 

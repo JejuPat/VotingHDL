@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Fri Aug  8 02:42:04 2025
+| Date         : Fri Aug  8 03:41:37 2025
 | Host         : MSI running 64-bit major release  (build 9200)
 | Command      : report_methodology -file voting_proc_methodology_drc_routed.rpt -pb voting_proc_methodology_drc_routed.pb -rpx voting_proc_methodology_drc_routed.rpx
 | Design       : voting_proc
@@ -23,12 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 29
+             Violations found: 25
 +-----------+----------+--------------------------------+------------+
 | Rule      | Severity | Description                    | Violations |
 +-----------+----------+--------------------------------+------------+
 | TIMING-18 | Warning  | Missing input or output delay  | 22         |
-| TIMING-20 | Warning  | Non-clocked latch              | 6          |
+| TIMING-20 | Warning  | Non-clocked latch              | 2          |
 | LATCH-1   | Advisory | Existing latches in the design | 1          |
 +-----------+----------+--------------------------------+------------+
 
@@ -151,32 +151,12 @@ Related violations: <none>
 
 TIMING-20#2 Warning
 Non-clocked latch  
-The latch TAG/tag_gen/swap_inst/seg1_reg[1] cannot be properly analyzed as its control pin TAG/tag_gen/swap_inst/seg1_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#3 Warning
-Non-clocked latch  
-The latch TAG/tag_gen/swap_inst/seg1_reg[2] cannot be properly analyzed as its control pin TAG/tag_gen/swap_inst/seg1_reg[2]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#4 Warning
-Non-clocked latch  
 The latch TAG/tag_gen/swap_inst/seg2_reg[0] cannot be properly analyzed as its control pin TAG/tag_gen/swap_inst/seg2_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#5 Warning
-Non-clocked latch  
-The latch TAG/tag_gen/swap_inst/seg2_reg[1] cannot be properly analyzed as its control pin TAG/tag_gen/swap_inst/seg2_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#6 Warning
-Non-clocked latch  
-The latch TAG/tag_gen/swap_inst/seg2_reg[2] cannot be properly analyzed as its control pin TAG/tag_gen/swap_inst/seg2_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 LATCH-1#1 Advisory
 Existing latches in the design  
-There are 6 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+There are 2 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
 Related violations: <none>
 
 

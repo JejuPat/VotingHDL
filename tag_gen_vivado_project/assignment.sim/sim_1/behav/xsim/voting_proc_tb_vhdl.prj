@@ -19,7 +19,10 @@ vhdl xil_defaultlib  \
 "../../../../assignment.srcs/sources_1/imports/sources_1/new/addr_calc.vhd" \
 "../../../../assignment.srcs/sources_1/imports/sources_1/new/next_pc_calc.vhd" \
 "../../../../assignment.srcs/sources_1/imports/sources_1/new/stage_instruction_fetch_decode.vhd" \
+"../../../../assignment.srcs/sources_1/new/record_mem.vhd" \
+"../../../../assignment.srcs/sources_1/new/SECRET_MEM.vhd" \
 "../../../../assignment.srcs/sim_1/imports/new/voting_proc_testbench.vhd" \
+"../../../../assignment.srcs/sim_1/new/voting_proc_tb.vhd" \
 
 # Do not sort compile order
 nosort

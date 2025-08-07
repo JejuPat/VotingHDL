@@ -37,11 +37,11 @@ entity voting_proc is
               T : natural := 4; 
               S : natural := 20 );
     port ( clk, reset : in std_logic;    -- note: valid is a temporary signal for testing until TAG stage implemented
-           btn1   : in std_logic;        -- goes to next instruction
-           btn2   : in std_logic;        -- goes to next record
-           btn3   : in std_logic;        -- goes to next secret
-           btn4       : in std_logic;    -- performs the instruction
-           btn5      : in std_logic;    -- to switch led output
+           btn1   : in std_logic;        -- goes to next instruction (right)
+           btn2   : in std_logic;        -- goes to next record (up)
+           btn3   : in std_logic;        -- goes to next secret (down)
+           btn4       : in std_logic;    -- performs the instruction (center)
+           btn5      : in std_logic;    -- to switch led output (left)
            led        : out std_logic_vector(15 downto 0) ); -- 15
 end voting_proc;
 

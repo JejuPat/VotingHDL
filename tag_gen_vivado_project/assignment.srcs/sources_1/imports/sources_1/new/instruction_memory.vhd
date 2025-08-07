@@ -49,7 +49,12 @@ begin
     instr_out <= instr_mem(to_integer(unsigned(pc_in)));
 
     -- define a sequency of instructions;
-    instr_mem(0) <= X"2000";    -- set secret X"2XXX"
-    instr_mem(1) <= X"1000";    -- handle record X"1XXX"
-    instr_mem(2) <= X"4FFE";    -- unconditional branch -2 (back to instruction 1) X"4FFE"
+    instr_mem(0) <= X"2000";  -- OP_SECRET
+    instr_mem(1) <= X"1000";  -- OP_RECORD
+    instr_mem(2) <= X"1000";  -- OP_RECORD
+    instr_mem(3) <= X"1000";  -- OP_RECORD
+    instr_mem(4) <= X"2000";  -- OP_SECRET
+    instr_mem(5) <= X"1000";  -- OP_RECORD
+    instr_mem(6) <= X"1000";  -- OP_RECORD
+    instr_mem(7) <= X"4FF8";  -- OP_BRANCH_UNCOND to PC -8 (i.e. back to instr_mem(0))
 end Behavioral;

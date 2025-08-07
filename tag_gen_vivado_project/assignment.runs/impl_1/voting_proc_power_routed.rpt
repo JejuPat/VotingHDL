@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Fri Aug  8 02:42:04 2025
+| Date             : Fri Aug  8 03:41:37 2025
 | Host             : MSI running 64-bit major release  (build 9200)
 | Command          : report_power -file voting_proc_power_routed.rpt -pb voting_proc_power_summary_routed.pb -rpx voting_proc_power_routed.rpx
 | Design           : voting_proc
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.090        |
+| Total On-Chip Power (W)  | 0.098        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.019        |
+| Dynamic (W)              | 0.026        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.5         |
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      629 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      226 |     20800 |            1.09 |
+| Slice Logic    |    <0.001 |      806 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      211 |     20800 |            1.01 |
 |   CARRY4       |    <0.001 |       29 |      8150 |            0.36 |
-|   Register     |    <0.001 |      311 |     41600 |            0.75 |
-|   BUFG         |    <0.001 |        1 |        32 |            3.13 |
-|   Others       |     0.000 |       10 |       --- |             --- |
-| Signals        |    <0.001 |      566 |       --- |             --- |
-| I/O            |     0.015 |       23 |       106 |           21.70 |
+|   Register     |    <0.001 |      508 |     41600 |            1.22 |
+|   F7/F8 Muxes  |    <0.001 |       16 |     32600 |            0.05 |
+|   Others       |     0.000 |       11 |       --- |             --- |
+| Signals        |     0.002 |      711 |       --- |             --- |
+| I/O            |     0.022 |       23 |       106 |           21.70 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.090 |          |           |                 |
+| Total          |     0.098 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,9 +72,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.013 |       0.004 |      0.010 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.014 |       0.005 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.013 |       0.001 |      0.013 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.005 |       0.004 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.007 |       0.006 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -138,10 +138,14 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+-------------+-----------+
-| Name        | Power (W) |
-+-------------+-----------+
-| voting_proc |     0.019 |
-+-------------+-----------+
++---------------+-----------+
+| Name          | Power (W) |
++---------------+-----------+
+| voting_proc   |     0.026 |
+|   MEM         |     0.002 |
+|     DMEM      |     0.001 |
+|   WB          |     0.001 |
+|     sat_adder |     0.001 |
++---------------+-----------+
 
 

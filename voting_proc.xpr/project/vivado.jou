@@ -11,3 +11,168 @@
 # Running On: MSI, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 24, Host memory: 31897 MB
 #-----------------------------------------------------------
 start_gui
+open_project C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/voting_proc.xpr/project/project.xpr
+open_project C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sim_1/new/tb_tag_generator.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sim_1/new/tb_tag_generator.vhd
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sim_1/new/tb_flip.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sim_1/new/tb_flip.vhd
+export_ip_user_files -of_objects  [get_files {{C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/new/tag_gen.vhd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/new/tag_gen.vhd}}
+set_property source_mgmt_mode DisplayOnly [current_project]
+export_ip_user_files -of_objects  [get_files {{C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/imports/VotingHDL/XOR_stage.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/new/flip.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Assignment/VotingHDL/shift.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sources_1/imports/VotingHDL/swap.v] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/imports/VotingHDL/XOR_stage.vhd} {C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/new/flip.vhd} C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Assignment/VotingHDL/shift.vhd C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sources_1/imports/VotingHDL/swap.v}
+import_files -norecurse {{C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/voting_proc.xpr/project/project.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/new/flip.vhd} C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/voting_proc.xpr/project/project.srcs/sources_1/new/data_memory.vhd {C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/voting_proc.xpr/project/project.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/imports/VotingHDL/swap.v} C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/voting_proc.xpr/project/project.srcs/sources_1/new/2to1_mux_nbit.vhd C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/voting_proc.xpr/project/project.srcs/sources_1/new/stage_write_back.vhd C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/voting_proc.xpr/project/project.srcs/sources_1/imports/COMP3211/Assignment/VotingHDL/shift.vhd C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/voting_proc.xpr/project/project.srcs/sources_1/new/stage_memory.vhd C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/voting_proc.xpr/project/project.srcs/sources_1/new/voting_proc.vhd C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/voting_proc.xpr/project/project.srcs/sources_1/new/control_unit.vhd C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/voting_proc.xpr/project/project.srcs/sources_1/new/tag_generator.vhd C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/voting_proc.xpr/project/project.srcs/sources_1/new/reg_n.vhd {C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/voting_proc.xpr/project/project.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/imports/VotingHDL/XOR_stage.vhd} C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/voting_proc.xpr/project/project.srcs/sources_1/new/pc_reg.vhd C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/voting_proc.xpr/project/project.srcs/sources_1/new/stage_tag_gen.vhd C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/voting_proc.xpr/project/project.srcs/sources_1/new/saturation_adder.vhd C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/voting_proc.xpr/project/project.srcs/sources_1/new/instruction_memory.vhd C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/voting_proc.xpr/project/project.srcs/sources_1/new/sign_extender_n_to_m.vhd C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/voting_proc.xpr/project/project.srcs/sources_1/new/addr_calc.vhd C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/voting_proc.xpr/project/project.srcs/sources_1/new/next_pc_calc.vhd C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/voting_proc.xpr/project/project.srcs/sources_1/new/stage_instruction_fetch_decode.vhd}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/voting_proc.xpr/project/project.srcs/sim_1/imports/project/voting_proc_testbench_behav.wcfg
+import_files -fileset sim_1 -norecurse C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/voting_proc.xpr/project/project.srcs/sim_1/new/voting_proc_testbench.vhd
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top voting_proc [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top voting_proc_testbench_1 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sim_1/imports/project/voting_proc_testbench_behav.wcfg
+source voting_proc_testbench_1.tcl
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_testbench_1/r_CLOCK}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_testbench_1/r_reset}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_testbench_1/r_process_tag_en}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_testbench_1/r_secret}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_testbench_1/r_record_tag}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_testbench_1/r_write_addr}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_testbench_1/r_write_data}} 
+relaunch_sim
+save_wave_config {C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sim_1/imports/project/voting_proc_testbench_behav.wcfg}
+close_sim
+add_files -fileset constrs_1 -norecurse C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/voting_proc.xpr/project/project.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc
+import_files -fileset constrs_1 C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/voting_proc.xpr/project/project.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sim_1/imports/project/voting_proc_testbench_behav.wcfg
+source voting_proc_testbench_1.tcl
+close_sim
+close [ open C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sources_1/new/record_mem.vhd w ]
+add_files C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sources_1/new/record_mem.vhd
+close [ open C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sources_1/new/SECRET_MEM.vhd w ]
+add_files C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sources_1/new/SECRET_MEM.vhd
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+copy_run -name synth_1_copy_1 [get_runs synth_1] 
+set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
+set_property dataflow_viewer_settings "min_width=16"   [current_fileset]
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.runs/impl_1/voting_proc.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.runs/impl_1/voting_proc.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.runs/impl_1/voting_proc.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+open_run impl_1
+report_utilization -name utilization_1
+close_design
+close_hw_manager
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sim_1/new/voting_proc_tb.vhd w ]
+add_files -fileset sim_1 C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sim_1/new/voting_proc_tb.vhd
+launch_simulation
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top voting_proc_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sim_1/imports/project/voting_proc_testbench_behav.wcfg
+source voting_proc_tb.tcl
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_tb/uut/TAG/tag_gen/shift_inst/i_record}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_tb/uut/TAG/tag_gen/shift_inst/i_key}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_tb/led}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_tb/btn1}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_tb/btn2}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_tb/btn3}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_tb/btn4}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_tb/btn5}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sim_1/imports/project/voting_proc_testbench_behav.wcfg}
+close_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.runs/impl_1/voting_proc.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.runs/impl_1/voting_proc.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/Uni/COMP3211/Assignment/VotingHDL/tag_gen_vivado_project/assignment.srcs/sim_1/imports/project/voting_proc_testbench_behav.wcfg
+source voting_proc_tb.tcl
+close_sim
