@@ -1,23 +1,8 @@
 Vivado Simulator v2022.2
 Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_tag_generator_behav xil_defaultlib.tb_tag_generator xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot voting_proc_testbench_1_behav xil_defaultlib.voting_proc_testbench_1 xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling package vl.vl_types
-Compiling module xil_defaultlib.glbl
-Compiling architecture behavioral of entity xil_defaultlib.flip [flip_default]
-Compiling module xil_defaultlib.swap(TAG_SIZE=4,RECORD_SIZE=16,S...
-Compiling architecture behavioural of entity xil_defaultlib.shift [shift_default]
-Compiling architecture behavioral of entity xil_defaultlib.XOR_stage [xor_stage_default]
-Compiling architecture behavioral of entity xil_defaultlib.tag_generator [tag_generator_default]
-Compiling architecture behavior of entity xil_defaultlib.tb_tag_generator
-Built simulation snapshot tb_tag_generator_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

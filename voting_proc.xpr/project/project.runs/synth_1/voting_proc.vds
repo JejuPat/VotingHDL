@@ -1,0 +1,628 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Aug  7 10:02:43 2025
+# Process ID: 26412
+# Current directory: C:/COMP3211/project/project.runs/synth_1
+# Command line: vivado.exe -log voting_proc.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source voting_proc.tcl
+# Log file: C:/COMP3211/project/project.runs/synth_1/voting_proc.vds
+# Journal file: C:/COMP3211/project/project.runs/synth_1\vivado.jou
+# Running On        :Michael-School
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+# CPU Frequency     :2112 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8396 MB
+# Swap memory       :13665 MB
+# Total Virtual     :22061 MB
+# Available Virtual :7821 MB
+#-----------------------------------------------------------
+source voting_proc.tcl -notrace
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 493.566 ; gain = 199.262
+Command: read_checkpoint -auto_incremental -incremental C:/COMP3211/project/project.srcs/utils_1/imports/synth_1/stage_memory.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/COMP3211/project/project.srcs/utils_1/imports/synth_1/stage_memory.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top voting_proc -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21256
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1350.832 ; gain = 448.734
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'voting_proc' [C:/COMP3211/project/project.srcs/sources_1/new/voting_proc.vhd:47]
+	Parameter C bound to: 2 - type: integer 
+	Parameter D bound to: 2 - type: integer 
+	Parameter R bound to: 12 - type: integer 
+	Parameter T bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'stage_instruction_fetch_decode' declared at 'C:/COMP3211/project/project.srcs/sources_1/new/stage_instruction_fetch_decode.vhd:34' bound to instance 'IFD' of component 'stage_instruction_fetch_decode' [C:/COMP3211/project/project.srcs/sources_1/new/voting_proc.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'stage_instruction_fetch_decode' [C:/COMP3211/project/project.srcs/sources_1/new/stage_instruction_fetch_decode.vhd:45]
+	Parameter C bound to: 2 - type: integer 
+	Parameter D bound to: 2 - type: integer 
+	Parameter R bound to: 12 - type: integer 
+	Parameter T bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'pc_reg' declared at 'C:/COMP3211/project/project.srcs/sources_1/new/pc_reg.vhd:34' bound to instance 'pc_reg_def' of component 'pc_reg' [C:/COMP3211/project/project.srcs/sources_1/new/stage_instruction_fetch_decode.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'pc_reg' [C:/COMP3211/project/project.srcs/sources_1/new/pc_reg.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'pc_reg' (0#1) [C:/COMP3211/project/project.srcs/sources_1/new/pc_reg.vhd:41]
+INFO: [Synth 8-3491] module 'next_pc_calc' declared at 'C:/COMP3211/project/project.srcs/sources_1/new/next_pc_calc.vhd:35' bound to instance 'pc_next_get' of component 'next_pc_calc' [C:/COMP3211/project/project.srcs/sources_1/new/stage_instruction_fetch_decode.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'next_pc_calc' [C:/COMP3211/project/project.srcs/sources_1/new/next_pc_calc.vhd:42]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'mux_2to1_nbit' declared at 'C:/COMP3211/project/project.srcs/sources_1/new/2to1_mux_nbit.vhd:34' bound to instance 'branch_mux' of component 'mux_2to1_nbit' [C:/COMP3211/project/project.srcs/sources_1/new/next_pc_calc.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'mux_2to1_nbit' [C:/COMP3211/project/project.srcs/sources_1/new/2to1_mux_nbit.vhd:41]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux_2to1_nbit' (0#1) [C:/COMP3211/project/project.srcs/sources_1/new/2to1_mux_nbit.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'next_pc_calc' (0#1) [C:/COMP3211/project/project.srcs/sources_1/new/next_pc_calc.vhd:42]
+INFO: [Synth 8-3491] module 'instruction_memory' declared at 'C:/COMP3211/project/project.srcs/sources_1/new/instruction_memory.vhd:35' bound to instance 'IMEM' of component 'instruction_memory' [C:/COMP3211/project/project.srcs/sources_1/new/stage_instruction_fetch_decode.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'instruction_memory' [C:/COMP3211/project/project.srcs/sources_1/new/instruction_memory.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'instruction_memory' (0#1) [C:/COMP3211/project/project.srcs/sources_1/new/instruction_memory.vhd:40]
+INFO: [Synth 8-3491] module 'control_unit' declared at 'C:/COMP3211/project/project.srcs/sources_1/new/control_unit.vhd:34' bound to instance 'ctrl_unit' of component 'control_unit' [C:/COMP3211/project/project.srcs/sources_1/new/stage_instruction_fetch_decode.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [C:/COMP3211/project/project.srcs/sources_1/new/control_unit.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (0#1) [C:/COMP3211/project/project.srcs/sources_1/new/control_unit.vhd:42]
+	Parameter N bound to: 12 - type: integer 
+	Parameter M bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'sign_extender_n_to_m' declared at 'C:/COMP3211/project/project.srcs/sources_1/new/sign_extender_n_to_m.vhd:34' bound to instance 'sign_ext' of component 'sign_extender_n_to_m' [C:/COMP3211/project/project.srcs/sources_1/new/stage_instruction_fetch_decode.vhd:117]
+INFO: [Synth 8-638] synthesizing module 'sign_extender_n_to_m' [C:/COMP3211/project/project.srcs/sources_1/new/sign_extender_n_to_m.vhd:41]
+	Parameter N bound to: 12 - type: integer 
+	Parameter M bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sign_extender_n_to_m' (0#1) [C:/COMP3211/project/project.srcs/sources_1/new/sign_extender_n_to_m.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'stage_instruction_fetch_decode' (0#1) [C:/COMP3211/project/project.srcs/sources_1/new/stage_instruction_fetch_decode.vhd:45]
+	Parameter C bound to: 2 - type: integer 
+	Parameter D bound to: 2 - type: integer 
+	Parameter R bound to: 12 - type: integer 
+	Parameter T bound to: 4 - type: integer 
+	Parameter S bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'stage_tag_gen' declared at 'C:/COMP3211/project/project.srcs/sources_1/new/stage_tag_gen.vhd:34' bound to instance 'TAG' of component 'stage_tag_gen' [C:/COMP3211/project/project.srcs/sources_1/new/voting_proc.vhd:144]
+INFO: [Synth 8-638] synthesizing module 'stage_tag_gen' [C:/COMP3211/project/project.srcs/sources_1/new/stage_tag_gen.vhd:50]
+	Parameter C bound to: 2 - type: integer 
+	Parameter D bound to: 2 - type: integer 
+	Parameter R bound to: 12 - type: integer 
+	Parameter T bound to: 4 - type: integer 
+	Parameter S bound to: 20 - type: integer 
+	Parameter N bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'reg_n' declared at 'C:/COMP3211/project/project.srcs/sources_1/new/reg_n.vhd:34' bound to instance 'secret_reg' of component 'reg_n' [C:/COMP3211/project/project.srcs/sources_1/new/stage_tag_gen.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'reg_n' [C:/COMP3211/project/project.srcs/sources_1/new/reg_n.vhd:42]
+	Parameter N bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_n' (0#1) [C:/COMP3211/project/project.srcs/sources_1/new/reg_n.vhd:42]
+	Parameter C bound to: 2 - type: integer 
+	Parameter D bound to: 2 - type: integer 
+	Parameter R bound to: 12 - type: integer 
+	Parameter T bound to: 4 - type: integer 
+	Parameter S bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'tag_generator' declared at 'C:/COMP3211/project/project.srcs/sources_1/new/tag_generator.vhd:35' bound to instance 'tag_gen' of component 'tag_generator' [C:/COMP3211/project/project.srcs/sources_1/new/stage_tag_gen.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'tag_generator' [C:/COMP3211/project/project.srcs/sources_1/new/tag_generator.vhd:45]
+	Parameter C bound to: 2 - type: integer 
+	Parameter D bound to: 2 - type: integer 
+	Parameter R bound to: 12 - type: integer 
+	Parameter T bound to: 4 - type: integer 
+	Parameter S bound to: 20 - type: integer 
+	Parameter EXTENDED_SIZE bound to: 12 - type: integer 
+	Parameter TAG_SIZE bound to: 4 - type: integer 
+	Parameter KEY_SIZE bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'flip' declared at 'C:/Users/Michael/Downloads/VotingHDL-main/VotingHDL-main/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/new/flip.vhd:5' bound to instance 'flip_inst' of component 'flip' [C:/COMP3211/project/project.srcs/sources_1/new/tag_generator.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'flip' [C:/Users/Michael/Downloads/VotingHDL-main/VotingHDL-main/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/new/flip.vhd:18]
+	Parameter EXTENDED_SIZE bound to: 12 - type: integer 
+	Parameter TAG_SIZE bound to: 4 - type: integer 
+	Parameter KEY_SIZE bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flip' (0#1) [C:/Users/Michael/Downloads/VotingHDL-main/VotingHDL-main/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/new/flip.vhd:18]
+	Parameter TAG_SIZE bound to: 4 - type: integer 
+	Parameter RECORD_SIZE bound to: 12 - type: integer 
+	Parameter SECRET_KEY_SIZE bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'swap' declared at 'C:/Users/Michael/Downloads/VotingHDL-main/VotingHDL-main/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/imports/VotingHDL/swap.v:22' bound to instance 'swap_inst' of component 'swap' [C:/COMP3211/project/project.srcs/sources_1/new/tag_generator.vhd:117]
+INFO: [Synth 8-6157] synthesizing module 'swap' [C:/Users/Michael/Downloads/VotingHDL-main/VotingHDL-main/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/imports/VotingHDL/swap.v:22]
+	Parameter TAG_SIZE bound to: 4 - type: integer 
+	Parameter RECORD_SIZE bound to: 12 - type: integer 
+	Parameter SECRET_KEY_SIZE bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'swap' (0#1) [C:/Users/Michael/Downloads/VotingHDL-main/VotingHDL-main/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/imports/VotingHDL/swap.v:22]
+	Parameter EXTENDED_SIZE bound to: 12 - type: integer 
+	Parameter TAG_SIZE bound to: 4 - type: integer 
+	Parameter KEY_SIZE bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'shift' declared at 'C:/Users/Michael/Downloads/VotingHDL-main/VotingHDL-main/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Assignment/VotingHDL/shift.vhd:5' bound to instance 'shift_inst' of component 'shift' [C:/COMP3211/project/project.srcs/sources_1/new/tag_generator.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'shift' [C:/Users/Michael/Downloads/VotingHDL-main/VotingHDL-main/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Assignment/VotingHDL/shift.vhd:18]
+	Parameter EXTENDED_SIZE bound to: 12 - type: integer 
+	Parameter TAG_SIZE bound to: 4 - type: integer 
+	Parameter KEY_SIZE bound to: 20 - type: integer 
+WARNING: [Synth 8-614] signal 'bs_index' is read in the process but is not in the sensitivity list [C:/Users/Michael/Downloads/VotingHDL-main/VotingHDL-main/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Assignment/VotingHDL/shift.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'shift' (0#1) [C:/Users/Michael/Downloads/VotingHDL-main/VotingHDL-main/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Assignment/VotingHDL/shift.vhd:18]
+	Parameter TAG_SIZE bound to: 4 - type: integer 
+	Parameter PADDED_RECORD_SIZE bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'XOR_stage' declared at 'C:/Users/Michael/Downloads/VotingHDL-main/VotingHDL-main/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/imports/VotingHDL/XOR_stage.vhd:34' bound to instance 'xor_inst' of component 'XOR_stage' [C:/COMP3211/project/project.srcs/sources_1/new/tag_generator.vhd:134]
+INFO: [Synth 8-638] synthesizing module 'XOR_stage' [C:/Users/Michael/Downloads/VotingHDL-main/VotingHDL-main/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/imports/VotingHDL/XOR_stage.vhd:44]
+	Parameter TAG_SIZE bound to: 4 - type: integer 
+	Parameter PADDED_RECORD_SIZE bound to: 12 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'XOR_stage' (0#1) [C:/Users/Michael/Downloads/VotingHDL-main/VotingHDL-main/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/imports/VotingHDL/XOR_stage.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'tag_generator' (0#1) [C:/COMP3211/project/project.srcs/sources_1/new/tag_generator.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'stage_tag_gen' (0#1) [C:/COMP3211/project/project.srcs/sources_1/new/stage_tag_gen.vhd:50]
+	Parameter C bound to: 2 - type: integer 
+	Parameter D bound to: 2 - type: integer 
+	Parameter R bound to: 12 - type: integer 
+	Parameter T bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'stage_memory' declared at 'C:/COMP3211/project/project.srcs/sources_1/new/stage_memory.vhd:35' bound to instance 'MEM' of component 'stage_memory' [C:/COMP3211/project/project.srcs/sources_1/new/voting_proc.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'stage_memory' [C:/COMP3211/project/project.srcs/sources_1/new/stage_memory.vhd:52]
+	Parameter C bound to: 2 - type: integer 
+	Parameter D bound to: 2 - type: integer 
+	Parameter R bound to: 12 - type: integer 
+	Parameter T bound to: 4 - type: integer 
+	Parameter N bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'mux_2to1_nbit' declared at 'C:/COMP3211/project/project.srcs/sources_1/new/2to1_mux_nbit.vhd:34' bound to instance 'addr_calc_dist_mux' of component 'mux_2to1_nbit' [C:/COMP3211/project/project.srcs/sources_1/new/stage_memory.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'mux_2to1_nbit__parameterized1' [C:/COMP3211/project/project.srcs/sources_1/new/2to1_mux_nbit.vhd:41]
+	Parameter N bound to: 12 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux_2to1_nbit__parameterized1' (0#1) [C:/COMP3211/project/project.srcs/sources_1/new/2to1_mux_nbit.vhd:41]
+	Parameter C bound to: 2 - type: integer 
+	Parameter D bound to: 2 - type: integer 
+	Parameter R bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'addr_calc' declared at 'C:/COMP3211/project/project.srcs/sources_1/new/addr_calc.vhd:35' bound to instance 'addr_calc_unit' of component 'addr_calc' [C:/COMP3211/project/project.srcs/sources_1/new/stage_memory.vhd:136]
+INFO: [Synth 8-638] synthesizing module 'addr_calc' [C:/COMP3211/project/project.srcs/sources_1/new/addr_calc.vhd:42]
+	Parameter C bound to: 2 - type: integer 
+	Parameter D bound to: 2 - type: integer 
+	Parameter R bound to: 12 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'addr_calc' (0#1) [C:/COMP3211/project/project.srcs/sources_1/new/addr_calc.vhd:42]
+	Parameter C bound to: 2 - type: integer 
+	Parameter D bound to: 2 - type: integer 
+	Parameter R bound to: 12 - type: integer 
+	Parameter T bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'data_memory' declared at 'C:/COMP3211/project/project.srcs/sources_1/new/data_memory.vhd:35' bound to instance 'DMEM' of component 'data_memory' [C:/COMP3211/project/project.srcs/sources_1/new/stage_memory.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'data_memory' [C:/COMP3211/project/project.srcs/sources_1/new/data_memory.vhd:46]
+	Parameter C bound to: 2 - type: integer 
+	Parameter D bound to: 2 - type: integer 
+	Parameter R bound to: 12 - type: integer 
+	Parameter T bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'data_memory' (0#1) [C:/COMP3211/project/project.srcs/sources_1/new/data_memory.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'stage_memory' (0#1) [C:/COMP3211/project/project.srcs/sources_1/new/stage_memory.vhd:52]
+	Parameter C bound to: 2 - type: integer 
+	Parameter D bound to: 2 - type: integer 
+	Parameter R bound to: 12 - type: integer 
+	Parameter T bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'stage_write_back' declared at 'C:/COMP3211/project/project.srcs/sources_1/new/stage_write_back.vhd:34' bound to instance 'WB' of component 'stage_write_back' [C:/COMP3211/project/project.srcs/sources_1/new/voting_proc.vhd:180]
+INFO: [Synth 8-638] synthesizing module 'stage_write_back' [C:/COMP3211/project/project.srcs/sources_1/new/stage_write_back.vhd:48]
+	Parameter C bound to: 2 - type: integer 
+	Parameter D bound to: 2 - type: integer 
+	Parameter R bound to: 12 - type: integer 
+	Parameter T bound to: 4 - type: integer 
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'nbit_saturation_adder' declared at 'C:/COMP3211/project/project.srcs/sources_1/new/saturation_adder.vhd:35' bound to instance 'sat_adder' of component 'nbit_saturation_adder' [C:/COMP3211/project/project.srcs/sources_1/new/stage_write_back.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'nbit_saturation_adder' [C:/COMP3211/project/project.srcs/sources_1/new/saturation_adder.vhd:42]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'nbit_saturation_adder' (0#1) [C:/COMP3211/project/project.srcs/sources_1/new/saturation_adder.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'stage_write_back' (0#1) [C:/COMP3211/project/project.srcs/sources_1/new/stage_write_back.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'voting_proc' (0#1) [C:/COMP3211/project/project.srcs/sources_1/new/voting_proc.vhd:47]
+WARNING: [Synth 8-7129] Port read_addr[5] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port district[11] in module addr_calc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port district[10] in module addr_calc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port district[9] in module addr_calc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port district[8] in module addr_calc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port district[7] in module addr_calc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port district[6] in module addr_calc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port candidate[11] in module addr_calc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port candidate[10] in module addr_calc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port candidate[9] in module addr_calc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port candidate[8] in module addr_calc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port candidate[7] in module addr_calc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port candidate[6] in module addr_calc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tally_out[15] in module stage_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tally_out[14] in module stage_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tally_out[13] in module stage_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tally_out[12] in module stage_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tally_out[11] in module stage_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tally_out[10] in module stage_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tally_out[9] in module stage_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tally_out[8] in module stage_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[15] in module shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[14] in module shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[13] in module shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[12] in module shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[11] in module shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[10] in module shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[9] in module shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[8] in module shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[7] in module shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[6] in module shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[5] in module shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[4] in module shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[3] in module shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[2] in module shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[1] in module shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[0] in module shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port secret_key[19] in module swap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port secret_key[18] in module swap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port secret_key[17] in module swap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port secret_key[16] in module swap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port secret_key[15] in module swap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port secret_key[14] in module swap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port secret_key[13] in module swap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port secret_key[12] in module swap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port secret_key[1] in module swap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port secret_key[0] in module swap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[19] in module flip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[18] in module flip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[17] in module flip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[16] in module flip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[15] in module flip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[14] in module flip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[13] in module flip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[12] in module flip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[11] in module flip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[10] in module flip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[9] in module flip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[8] in module flip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[7] in module flip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[6] in module flip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[5] in module flip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[4] in module flip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[3] in module flip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_key[2] in module flip is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1619.746 ; gain = 717.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1619.746 ; gain = 717.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1619.746 ; gain = 717.648
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1619.746 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/COMP3211/lab03/lab3extract/l3p2/l3p2.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/voting_proc_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/voting_proc_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1723.469 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1723.469 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1723.469 ; gain = 821.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1723.469 ; gain = 821.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1723.469 ; gain = 821.371
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'seg2_reg' [C:/Users/Michael/Downloads/VotingHDL-main/VotingHDL-main/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/imports/VotingHDL/swap.v:50]
+WARNING: [Synth 8-327] inferring latch for variable 'seg1_reg' [C:/Users/Michael/Downloads/VotingHDL-main/VotingHDL-main/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/imports/VotingHDL/swap.v:49]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 1723.469 ; gain = 821.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 4     
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 2     
++---XORs : 
+	   2 Input      4 Bit         XORs := 2     
++---Registers : 
+	               20 Bit    Registers := 2     
+	               16 Bit    Registers := 23    
+	               12 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 2     
+	   4 Input   12 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 22    
+	   4 Input    1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:13 . Memory (MB): peak = 1723.469 ; gain = 821.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++-------------------+--------------+---------------+----------------+
+|Module Name        | RTL Object   | Depth x Width | Implemented As | 
++-------------------+--------------+---------------+----------------+
+|instruction_memory | instr_mem[0] | 65536x4       | LUT            | 
+|instruction_memory | instr_mem[0] | 65536x4       | LUT            | 
++-------------------+--------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:15 ; elapsed = 00:01:21 . Memory (MB): peak = 1723.469 ; gain = 821.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:18 ; elapsed = 00:01:24 . Memory (MB): peak = 1723.469 ; gain = 821.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:18 ; elapsed = 00:01:24 . Memory (MB): peak = 1723.469 ; gain = 821.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:26 ; elapsed = 00:01:32 . Memory (MB): peak = 1723.469 ; gain = 821.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:26 ; elapsed = 00:01:32 . Memory (MB): peak = 1723.469 ; gain = 821.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:26 ; elapsed = 00:01:32 . Memory (MB): peak = 1723.469 ; gain = 821.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:26 ; elapsed = 00:01:32 . Memory (MB): peak = 1723.469 ; gain = 821.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:26 ; elapsed = 00:01:32 . Memory (MB): peak = 1723.469 ; gain = 821.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:26 ; elapsed = 00:01:32 . Memory (MB): peak = 1723.469 ; gain = 821.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    17|
+|3     |LUT1   |     2|
+|4     |LUT2   |    38|
+|5     |LUT3   |    15|
+|6     |LUT4   |    23|
+|7     |LUT5   |    73|
+|8     |LUT6   |   150|
+|9     |MUXF7  |    32|
+|10    |FDCE   |   430|
+|11    |LD     |     6|
+|12    |IBUF   |    35|
+|13    |OBUF   |    22|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:26 ; elapsed = 00:01:32 . Memory (MB): peak = 1723.469 ; gain = 821.371
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:59 ; elapsed = 00:01:28 . Memory (MB): peak = 1723.469 ; gain = 717.648
+Synthesis Optimization Complete : Time (s): cpu = 00:01:27 ; elapsed = 00:01:32 . Memory (MB): peak = 1723.469 ; gain = 821.371
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1723.469 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1723.469 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  LD => LDCE: 6 instances
+
+Synth Design complete | Checksum: 63dff5b1
+INFO: [Common 17-83] Releasing license: Synthesis
+84 Infos, 114 Warnings, 45 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:35 ; elapsed = 00:02:01 . Memory (MB): peak = 1723.469 ; gain = 1221.125
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1723.469 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/COMP3211/project/project.runs/synth_1/voting_proc.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file voting_proc_utilization_synth.rpt -pb voting_proc_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Aug  7 10:05:18 2025...

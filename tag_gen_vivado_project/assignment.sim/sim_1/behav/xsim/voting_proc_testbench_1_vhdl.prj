@@ -1,0 +1,25 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../assignment.srcs/sources_1/imports/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/new/flip.vhd" \
+"../../../../assignment.srcs/sources_1/imports/sources_1/new/data_memory.vhd" \
+"../../../../assignment.srcs/sources_1/imports/sources_1/new/2to1_mux_nbit.vhd" \
+"../../../../assignment.srcs/sources_1/imports/sources_1/new/stage_write_back.vhd" \
+"../../../../assignment.srcs/sources_1/imports/sources_1/imports/COMP3211/Assignment/VotingHDL/shift.vhd" \
+"../../../../assignment.srcs/sources_1/imports/sources_1/new/stage_memory.vhd" \
+"../../../../assignment.srcs/sources_1/imports/sources_1/new/voting_proc.vhd" \
+"../../../../assignment.srcs/sources_1/imports/sources_1/new/control_unit.vhd" \
+"../../../../assignment.srcs/sources_1/imports/sources_1/new/tag_generator.vhd" \
+"../../../../assignment.srcs/sources_1/imports/sources_1/new/reg_n.vhd" \
+"../../../../assignment.srcs/sources_1/imports/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/imports/VotingHDL/XOR_stage.vhd" \
+"../../../../assignment.srcs/sources_1/imports/sources_1/new/pc_reg.vhd" \
+"../../../../assignment.srcs/sources_1/imports/sources_1/new/stage_tag_gen.vhd" \
+"../../../../assignment.srcs/sources_1/imports/sources_1/new/saturation_adder.vhd" \
+"../../../../assignment.srcs/sources_1/imports/sources_1/new/instruction_memory.vhd" \
+"../../../../assignment.srcs/sources_1/imports/sources_1/new/sign_extender_n_to_m.vhd" \
+"../../../../assignment.srcs/sources_1/imports/sources_1/new/addr_calc.vhd" \
+"../../../../assignment.srcs/sources_1/imports/sources_1/new/next_pc_calc.vhd" \
+"../../../../assignment.srcs/sources_1/imports/sources_1/new/stage_instruction_fetch_decode.vhd" \
+"../../../../assignment.srcs/sim_1/imports/new/voting_proc_testbench.vhd" \
+
+# Do not sort compile order
+nosort

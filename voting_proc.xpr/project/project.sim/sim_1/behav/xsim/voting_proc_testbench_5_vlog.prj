@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../Users/Michael/Downloads/VotingHDL-main/VotingHDL-main/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/imports/VotingHDL/swap.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

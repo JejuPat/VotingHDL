@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="voting_proc_testbench_1_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="voting_proc_testbench_1" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="435.281 ns"></ZoomEndTime>
+      <Cursor1Time time="5.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="300"></NameColumnWidth>
+      <ValueColumnWidth column_width="143"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="7" />
+   <wvobject fp_name="/voting_proc_testbench_1/r_CLOCK" type="logic">
+      <obj_property name="ElementShortName">r_CLOCK</obj_property>
+      <obj_property name="ObjectShortName">r_CLOCK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/voting_proc_testbench_1/r_reset" type="logic">
+      <obj_property name="ElementShortName">r_reset</obj_property>
+      <obj_property name="ObjectShortName">r_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/voting_proc_testbench_1/r_process_tag_en" type="logic">
+      <obj_property name="ElementShortName">r_process_tag_en</obj_property>
+      <obj_property name="ObjectShortName">r_process_tag_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/voting_proc_testbench_1/r_secret" type="array">
+      <obj_property name="ElementShortName">r_secret[15:0]</obj_property>
+      <obj_property name="ObjectShortName">r_secret[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/voting_proc_testbench_1/r_record_tag" type="array">
+      <obj_property name="ElementShortName">r_record_tag[13:0]</obj_property>
+      <obj_property name="ObjectShortName">r_record_tag[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/voting_proc_testbench_1/r_write_addr" type="array">
+      <obj_property name="ElementShortName">r_write_addr[8:0]</obj_property>
+      <obj_property name="ObjectShortName">r_write_addr[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/voting_proc_testbench_1/r_write_data" type="array">
+      <obj_property name="ElementShortName">r_write_data[13:0]</obj_property>
+      <obj_property name="ObjectShortName">r_write_data[13:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,1440 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Aug  7 10:10:17 2025
+# Process ID: 25080
+# Current directory: C:/COMP3211/project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6636 C:\COMP3211\project\project.xpr
+# Log file: C:/COMP3211/project/vivado.log
+# Journal file: C:/COMP3211/project\vivado.jou
+# Running On        :Michael-School
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+# CPU Frequency     :2112 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8396 MB
+# Swap memory       :13665 MB
+# Total Virtual     :22061 MB
+# Available Virtual :9578 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/COMP3211/project/project.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24c/1.0/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24i/1.0/board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.4 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.2/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.3/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.4 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.4/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kd240_som:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kd240_som/1.0/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.0/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.1/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.3 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.4 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.2/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.2/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc702:part0:1.4 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc702/1.4/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu104/1.1/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.4/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.5/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.6/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/COMP3211/project/project.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+open_project: Time (s): cpu = 00:00:53 ; elapsed = 00:00:23 . Memory (MB): peak = 1506.883 ; gain = 437.660
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'voting_proc_testbench_3'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'voting_proc_testbench_3' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj voting_proc_testbench_3_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Michael/Downloads/VotingHDL-main/VotingHDL-main/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/imports/VotingHDL/swap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module swap
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/COMP3211/project/project.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj voting_proc_testbench_3_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/COMP3211/project/project.srcs/sources_1/new/2to1_mux_nbit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux_2to1_nbit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Michael/Downloads/VotingHDL-main/VotingHDL-main/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/imports/VotingHDL/XOR_stage.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'XOR_stage'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/COMP3211/project/project.srcs/sources_1/new/addr_calc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'addr_calc'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/COMP3211/project/project.srcs/sources_1/new/control_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'control_unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/COMP3211/project/project.srcs/sources_1/new/data_memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'data_memory'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Michael/Downloads/VotingHDL-main/VotingHDL-main/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/new/flip.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'flip'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/COMP3211/project/project.srcs/sources_1/new/instruction_memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'instruction_memory'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/COMP3211/project/project.srcs/sources_1/new/next_pc_calc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'next_pc_calc'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/COMP3211/project/project.srcs/sources_1/new/pc_reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'pc_reg'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/COMP3211/project/project.srcs/sources_1/new/reg_n.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'reg_n'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/COMP3211/project/project.srcs/sources_1/new/saturation_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'nbit_saturation_adder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Michael/Downloads/VotingHDL-main/VotingHDL-main/tag_gen_vivado_project/assignment.srcs/sources_1/imports/COMP3211/Assignment/VotingHDL/shift.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'shift'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/COMP3211/project/project.srcs/sources_1/new/sign_extender_n_to_m.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sign_extender_n_to_m'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/COMP3211/project/project.srcs/sources_1/new/stage_instruction_fetch_decode.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'stage_instruction_fetch_decode'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/COMP3211/project/project.srcs/sources_1/new/stage_memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'stage_memory'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/COMP3211/project/project.srcs/sources_1/new/stage_tag_gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'stage_tag_gen'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/COMP3211/project/project.srcs/sources_1/new/stage_write_back.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'stage_write_back'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/COMP3211/project/project.srcs/sources_1/new/tag_generator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tag_generator'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/COMP3211/project/project.srcs/sources_1/new/voting_proc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'voting_proc'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/COMP3211/project/project.srcs/sim_1/new/voting_proc_testbench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'voting_proc_testbench_1'
+INFO: [VRFC 10-3107] analyzing entity 'voting_proc_testbench_2'
+INFO: [VRFC 10-3107] analyzing entity 'voting_proc_testbench_3'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1517.062 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot voting_proc_testbench_3_behav xil_defaultlib.voting_proc_testbench_3 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot voting_proc_testbench_3_behav xil_defaultlib.voting_proc_testbench_3 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.pc_reg [pc_reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2to1_nbit [\mux_2to1_nbit(n=16)\]
+Compiling architecture behavioral of entity xil_defaultlib.next_pc_calc [next_pc_calc_default]
+Compiling architecture behavioral of entity xil_defaultlib.instruction_memory [instruction_memory_default]
+Compiling architecture behavioral of entity xil_defaultlib.control_unit [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.sign_extender_n_to_m [sign_extender_n_to_m_default]
+Compiling architecture behavioral of entity xil_defaultlib.stage_instruction_fetch_decode [\stage_instruction_fetch_decode(...]
+Compiling architecture behavioral of entity xil_defaultlib.reg_n [\reg_n(n=16)\]
+Compiling architecture behavioral of entity xil_defaultlib.flip [\flip(extended_size=12,tag_size=...]
+Compiling module xil_defaultlib.swap(TAG_SIZE=3,RECORD_SIZE=12,S...
+Compiling architecture behavioural of entity xil_defaultlib.shift [\shift(extended_size=12,tag_size...]
+Compiling architecture behavioral of entity xil_defaultlib.XOR_stage [\XOR_stage(tag_size=3,padded_rec...]
+Compiling architecture behavioral of entity xil_defaultlib.tag_generator [\tag_generator(c=3,r=10,t=3)\]
+Compiling architecture behavioral of entity xil_defaultlib.stage_tag_gen [\stage_tag_gen(c=3,r=10,t=3)\]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2to1_nbit [\mux_2to1_nbit(n=10)\]
+Compiling architecture behavioral of entity xil_defaultlib.addr_calc [\addr_calc(c=3,r=10)\]
+Compiling architecture behavioral of entity xil_defaultlib.data_memory [\data_memory(c=3,r=10,t=3)\]
+Compiling architecture behavioral of entity xil_defaultlib.stage_memory [\stage_memory(c=3,r=10,t=3)\]
+Compiling architecture behavioral of entity xil_defaultlib.nbit_saturation_adder [\nbit_saturation_adder(n=13)\]
+Compiling architecture behavioral of entity xil_defaultlib.stage_write_back [\stage_write_back(c=3,r=10,t=3)\]
+Compiling architecture behavioral of entity xil_defaultlib.voting_proc [\voting_proc(c=3,r=10,t=3,s=16)\]
+Compiling architecture behavioral of entity xil_defaultlib.voting_proc_testbench_3
+Built simulation snapshot voting_proc_testbench_3_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "voting_proc_testbench_3_behav -key {Behavioral:sim_1:Functional:voting_proc_testbench_3} -tclbatch {voting_proc_testbench_3.tcl} -view {C:/COMP3211/project/voting_proc_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/COMP3211/project/voting_proc_testbench_behav.wcfg
+WARNING: Simulation object /voting_proc_testbench_2/r_CLOCK was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/r_reset was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/r_record_tag was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM_stall was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[0] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[1] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[2] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[3] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[4] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[5] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[6] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[7] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[8] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[9] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[10] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[11] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[12] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[13] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[14] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[15] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[16] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[17] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[18] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[19] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[20] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[21] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[22] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[23] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[24] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[25] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[26] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[27] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[28] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[29] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[30] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[31] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[32] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[33] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[34] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[35] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[36] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[37] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[38] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[39] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[40] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[41] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[42] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[43] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[44] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[45] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[46] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[47] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[48] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[49] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[50] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[51] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[52] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[53] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[54] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[55] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[56] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[57] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[58] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[59] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[60] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[61] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[62] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[63] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[64] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[65] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[66] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[67] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[68] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[69] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[70] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[71] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[72] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[73] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[74] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[75] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[76] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[77] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[78] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[79] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[80] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[81] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[82] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[83] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[84] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[85] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[86] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[87] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[88] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[89] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[90] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[91] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[92] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[93] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[94] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[95] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[96] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[97] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[98] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[99] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[100] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[101] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[102] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[103] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[104] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[105] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[106] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[107] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[108] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[109] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[110] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[111] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[112] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[113] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[114] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[115] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[116] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[117] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[118] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[119] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[120] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[121] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[122] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[123] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[124] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[125] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[126] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[127] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[128] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[129] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[130] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[131] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[132] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[133] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[134] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[135] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[136] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[137] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[138] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[139] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[140] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[141] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[142] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_2/UUT/MEM/DMEM/vote_table[143] was not found in the design.
+source voting_proc_testbench_3.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'voting_proc_testbench_3_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1526.285 ; gain = 9.223
+current_wave_config {voting_proc_testbench_behav.wcfg}
+voting_proc_testbench_behav.wcfg
+log_wave {/voting_proc_testbench_3/r_CLOCK} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+voting_proc_testbench_behav.wcfg
+add_wave {{/voting_proc_testbench_3/r_CLOCK}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+voting_proc_testbench_behav.wcfg
+add_wave {{/voting_proc_testbench_3/r_reset}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+voting_proc_testbench_behav.wcfg
+add_wave {{/voting_proc_testbench_3/UUT/MEM_stall}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+voting_proc_testbench_behav.wcfg
+add_wave {{/voting_proc_testbench_3/UUT/record_tag_in}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+voting_proc_testbench_behav.wcfg
+add_wave {{/voting_proc_testbench_3/UUT/MEM/DMEM/vote_table}} 
+save_wave_config {C:/COMP3211/project/voting_proc_testbench_behav.wcfg}
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'voting_proc_testbench_3'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'voting_proc_testbench_3' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj voting_proc_testbench_3_vlog.prj"
+"xvhdl --incr --relax -prj voting_proc_testbench_3_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'voting_proc_testbench_3'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot voting_proc_testbench_3_behav xil_defaultlib.voting_proc_testbench_3 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot voting_proc_testbench_3_behav xil_defaultlib.voting_proc_testbench_3 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1560.930 ; gain = 13.875
+save_wave_config {C:/COMP3211/project/voting_proc_testbench_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top voting_proc_testbench_4 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'voting_proc_testbench_4'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'voting_proc_testbench_4' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj voting_proc_testbench_4_vlog.prj"
+"xvhdl --incr --relax -prj voting_proc_testbench_4_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/COMP3211/project/project.srcs/sim_1/new/voting_proc_testbench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'voting_proc_testbench_1'
+INFO: [VRFC 10-3107] analyzing entity 'voting_proc_testbench_2'
+INFO: [VRFC 10-3107] analyzing entity 'voting_proc_testbench_3'
+INFO: [VRFC 10-3107] analyzing entity 'voting_proc_testbench_4'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot voting_proc_testbench_4_behav xil_defaultlib.voting_proc_testbench_4 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot voting_proc_testbench_4_behav xil_defaultlib.voting_proc_testbench_4 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.pc_reg [pc_reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2to1_nbit [\mux_2to1_nbit(n=16)\]
+Compiling architecture behavioral of entity xil_defaultlib.next_pc_calc [next_pc_calc_default]
+Compiling architecture behavioral of entity xil_defaultlib.instruction_memory [instruction_memory_default]
+Compiling architecture behavioral of entity xil_defaultlib.control_unit [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.sign_extender_n_to_m [sign_extender_n_to_m_default]
+Compiling architecture behavioral of entity xil_defaultlib.stage_instruction_fetch_decode [\stage_instruction_fetch_decode(...]
+Compiling architecture behavioral of entity xil_defaultlib.reg_n [\reg_n(n=20)\]
+Compiling architecture behavioral of entity xil_defaultlib.flip [\flip(extended_size=15,tag_size=...]
+Compiling module xil_defaultlib.swap(TAG_SIZE=5,RECORD_SIZE=15,S...
+Compiling architecture behavioural of entity xil_defaultlib.shift [\shift(extended_size=15,tag_size...]
+Compiling architecture behavioral of entity xil_defaultlib.XOR_stage [\XOR_stage(tag_size=5,padded_rec...]
+Compiling architecture behavioral of entity xil_defaultlib.tag_generator [\tag_generator(c=5,d=3,r=15,t=5,...]
+Compiling architecture behavioral of entity xil_defaultlib.stage_tag_gen [\stage_tag_gen(c=5,d=3,r=15,t=5,...]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2to1_nbit [\mux_2to1_nbit(n=15)\]
+Compiling architecture behavioral of entity xil_defaultlib.addr_calc [\addr_calc(c=5,d=3,r=15)\]
+Compiling architecture behavioral of entity xil_defaultlib.data_memory [\data_memory(c=5,d=3,r=15,t=5)\]
+Compiling architecture behavioral of entity xil_defaultlib.stage_memory [\stage_memory(c=5,d=3,r=15,t=5)\]
+Compiling architecture behavioral of entity xil_defaultlib.nbit_saturation_adder [\nbit_saturation_adder(n=20)\]
+Compiling architecture behavioral of entity xil_defaultlib.stage_write_back [\stage_write_back(c=5,d=3,r=15,t...]
+Compiling architecture behavioral of entity xil_defaultlib.voting_proc [\voting_proc(c=5,d=3,r=15,t=5)\]
+Compiling architecture behavioral of entity xil_defaultlib.voting_proc_testbench_4
+Built simulation snapshot voting_proc_testbench_4_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "voting_proc_testbench_4_behav -key {Behavioral:sim_1:Functional:voting_proc_testbench_4} -tclbatch {voting_proc_testbench_4.tcl} -view {C:/COMP3211/project/voting_proc_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/COMP3211/project/voting_proc_testbench_behav.wcfg
+WARNING: Simulation object /voting_proc_testbench_3/r_CLOCK was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/r_reset was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM_stall was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/record_tag_in was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[0] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[1] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[2] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[3] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[4] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[5] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[6] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[7] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[8] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[9] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[10] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[11] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[12] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[13] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[14] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[15] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[16] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[17] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[18] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[19] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[20] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[21] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[22] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[23] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[24] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[25] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[26] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[27] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[28] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[29] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[30] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[31] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[32] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[33] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[34] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[35] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[36] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[37] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[38] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_3/UUT/MEM/DMEM/vote_table[39] was not found in the design.
+source voting_proc_testbench_4.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'voting_proc_testbench_4_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1588.734 ; gain = 0.000
+current_wave_config {voting_proc_testbench_behav.wcfg}
+voting_proc_testbench_behav.wcfg
+add_wave {{/voting_proc_testbench_4/r_CLOCK}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+voting_proc_testbench_behav.wcfg
+add_wave {{/voting_proc_testbench_4/r_reset}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+voting_proc_testbench_behav.wcfg
+add_wave {{/voting_proc_testbench_4/UUT/record_tag_in}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+voting_proc_testbench_behav.wcfg
+add_wave {{/voting_proc_testbench_4/UUT/MEM_stall}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+voting_proc_testbench_behav.wcfg
+add_wave {{/voting_proc_testbench_4/UUT/MEM/DMEM/vote_table}} 
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'voting_proc_testbench_4'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj voting_proc_testbench_4_vlog.prj"
+"xvhdl --incr --relax -prj voting_proc_testbench_4_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'voting_proc_testbench_4'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot voting_proc_testbench_4_behav xil_defaultlib.voting_proc_testbench_4 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot voting_proc_testbench_4_behav xil_defaultlib.voting_proc_testbench_4 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1588.734 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'voting_proc_testbench_4'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj voting_proc_testbench_4_vlog.prj"
+"xvhdl --incr --relax -prj voting_proc_testbench_4_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'voting_proc_testbench_4'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot voting_proc_testbench_4_behav xil_defaultlib.voting_proc_testbench_4 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot voting_proc_testbench_4_behav xil_defaultlib.voting_proc_testbench_4 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1588.734 ; gain = 0.000
+save_wave_config {C:/COMP3211/project/voting_proc_testbench_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top voting_proc_testbench_5 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'voting_proc_testbench_5'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'voting_proc_testbench_5' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj voting_proc_testbench_5_vlog.prj"
+"xvhdl --incr --relax -prj voting_proc_testbench_5_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/COMP3211/project/project.srcs/sim_1/new/voting_proc_testbench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'voting_proc_testbench_1'
+INFO: [VRFC 10-3107] analyzing entity 'voting_proc_testbench_2'
+INFO: [VRFC 10-3107] analyzing entity 'voting_proc_testbench_3'
+INFO: [VRFC 10-3107] analyzing entity 'voting_proc_testbench_4'
+INFO: [VRFC 10-3107] analyzing entity 'voting_proc_testbench_5'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot voting_proc_testbench_5_behav xil_defaultlib.voting_proc_testbench_5 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot voting_proc_testbench_5_behav xil_defaultlib.voting_proc_testbench_5 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.pc_reg [pc_reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2to1_nbit [\mux_2to1_nbit(n=16)\]
+Compiling architecture behavioral of entity xil_defaultlib.next_pc_calc [next_pc_calc_default]
+Compiling architecture behavioral of entity xil_defaultlib.instruction_memory [instruction_memory_default]
+Compiling architecture behavioral of entity xil_defaultlib.control_unit [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.sign_extender_n_to_m [sign_extender_n_to_m_default]
+Compiling architecture behavioral of entity xil_defaultlib.stage_instruction_fetch_decode [\stage_instruction_fetch_decode(...]
+Compiling architecture behavioral of entity xil_defaultlib.reg_n [\reg_n(n=20)\]
+Compiling architecture behavioral of entity xil_defaultlib.flip [\flip(tag_size=8,key_size=20)\]
+Compiling module xil_defaultlib.swap(TAG_SIZE=8,RECORD_SIZE=16,S...
+Compiling architecture behavioural of entity xil_defaultlib.shift [\shift(tag_size=8,key_size=20)\]
+Compiling architecture behavioral of entity xil_defaultlib.XOR_stage [\XOR_stage(tag_size=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.tag_generator [\tag_generator(c=3,r=10,t=8,s=20...]
+Compiling architecture behavioral of entity xil_defaultlib.stage_tag_gen [\stage_tag_gen(c=3,r=10,t=8,s=20...]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2to1_nbit [\mux_2to1_nbit(n=10)\]
+Compiling architecture behavioral of entity xil_defaultlib.addr_calc [\addr_calc(c=3,r=10)\]
+Compiling architecture behavioral of entity xil_defaultlib.data_memory [\data_memory(c=3,r=10,t=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.stage_memory [\stage_memory(c=3,r=10,t=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.nbit_saturation_adder [\nbit_saturation_adder(n=18)\]
+Compiling architecture behavioral of entity xil_defaultlib.stage_write_back [\stage_write_back(c=3,r=10,t=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.voting_proc [\voting_proc(c=3,r=10,t=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.voting_proc_testbench_5
+Built simulation snapshot voting_proc_testbench_5_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1591.789 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "voting_proc_testbench_5_behav -key {Behavioral:sim_1:Functional:voting_proc_testbench_5} -tclbatch {voting_proc_testbench_5.tcl} -view {C:/COMP3211/project/voting_proc_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/COMP3211/project/voting_proc_testbench_behav.wcfg
+WARNING: Simulation object /voting_proc_testbench_4/r_CLOCK was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/r_reset was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/record_tag_in was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM_stall was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[0] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[1] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[2] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[3] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[4] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[5] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[6] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[7] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[8] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[9] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[10] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[11] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[12] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[13] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[14] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[15] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[16] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[17] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[18] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[19] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[20] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[21] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[22] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[23] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[24] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[25] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[26] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[27] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[28] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[29] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[30] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[31] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[32] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[33] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[34] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[35] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[36] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[37] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[38] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[39] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[40] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[41] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[42] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[43] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[44] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[45] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[46] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[47] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[48] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[49] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[50] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[51] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[52] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[53] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[54] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[55] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[56] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[57] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[58] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[59] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[60] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[61] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[62] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[63] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[64] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[65] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[66] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[67] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[68] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[69] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[70] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[71] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[72] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[73] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[74] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[75] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[76] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[77] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[78] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[79] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[80] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[81] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[82] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[83] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[84] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[85] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[86] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[87] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[88] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[89] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[90] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[91] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[92] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[93] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[94] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[95] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[96] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[97] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[98] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[99] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[100] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[101] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[102] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[103] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[104] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[105] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[106] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[107] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[108] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[109] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[110] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[111] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[112] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[113] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[114] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[115] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[116] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[117] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[118] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[119] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[120] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[121] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[122] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[123] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[124] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[125] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[126] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[127] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[128] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[129] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[130] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[131] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[132] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[133] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[134] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[135] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[136] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[137] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[138] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[139] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[140] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[141] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[142] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[143] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[144] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[145] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[146] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[147] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[148] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[149] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[150] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[151] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[152] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[153] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[154] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[155] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[156] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[157] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[158] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[159] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[160] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[161] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[162] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[163] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[164] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[165] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[166] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[167] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[168] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[169] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[170] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[171] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[172] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[173] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[174] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[175] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[176] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[177] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[178] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[179] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[180] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[181] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[182] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[183] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[184] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[185] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[186] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[187] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[188] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[189] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[190] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[191] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[192] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[193] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[194] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[195] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[196] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[197] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[198] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[199] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[200] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[201] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[202] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[203] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[204] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[205] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[206] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[207] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[208] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[209] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[210] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[211] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[212] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[213] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[214] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[215] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[216] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[217] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[218] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[219] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[220] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[221] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[222] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[223] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[224] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[225] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[226] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[227] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[228] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[229] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[230] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[231] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[232] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[233] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[234] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[235] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[236] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[237] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[238] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[239] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[240] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[241] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[242] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[243] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[244] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[245] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[246] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[247] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[248] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[249] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[250] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[251] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[252] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[253] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[254] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[255] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[256] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[257] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[258] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[259] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[260] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[261] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[262] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[263] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[264] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[265] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[266] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[267] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[268] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[269] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[270] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[271] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[272] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[273] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[274] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[275] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[276] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[277] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[278] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[279] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[280] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[281] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[282] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[283] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[284] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[285] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[286] was not found in the design.
+WARNING: Simulation object /voting_proc_testbench_4/UUT/MEM/DMEM/vote_table[287] was not found in the design.
+source voting_proc_testbench_5.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'voting_proc_testbench_5_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1591.789 ; gain = 0.000
+current_wave_config {voting_proc_testbench_behav.wcfg}
+voting_proc_testbench_behav.wcfg
+add_wave {{/voting_proc_testbench_5/r_CLOCK}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+voting_proc_testbench_behav.wcfg
+add_wave {{/voting_proc_testbench_5/r_reset}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+voting_proc_testbench_behav.wcfg
+add_wave {{/voting_proc_testbench_5/UUT/record_tag_in}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+voting_proc_testbench_behav.wcfg
+add_wave {{/voting_proc_testbench_5/UUT/MEM_stall}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+voting_proc_testbench_behav.wcfg
+add_wave {{/voting_proc_testbench_5/UUT/MEM/DMEM/vote_table}} 
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'voting_proc_testbench_5'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj voting_proc_testbench_5_vlog.prj"
+"xvhdl --incr --relax -prj voting_proc_testbench_5_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'voting_proc_testbench_5'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot voting_proc_testbench_5_behav xil_defaultlib.voting_proc_testbench_5 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot voting_proc_testbench_5_behav xil_defaultlib.voting_proc_testbench_5 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1591.914 ; gain = 0.125
+current_wave_config {voting_proc_testbench_behav.wcfg}
+voting_proc_testbench_behav.wcfg
+add_wave {{/voting_proc_testbench_5/UUT/TAG/tag_gen/tag_out}} 
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'voting_proc_testbench_5'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj voting_proc_testbench_5_vlog.prj"
+"xvhdl --incr --relax -prj voting_proc_testbench_5_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'voting_proc_testbench_5'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot voting_proc_testbench_5_behav xil_defaultlib.voting_proc_testbench_5 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot voting_proc_testbench_5_behav xil_defaultlib.voting_proc_testbench_5 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1627.957 ; gain = 0.000
+save_wave_config {C:/COMP3211/project/voting_proc_testbench_behav.wcfg}
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'voting_proc_testbench_5'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj voting_proc_testbench_5_vlog.prj"
+"xvhdl --incr --relax -prj voting_proc_testbench_5_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/COMP3211/project/project.srcs/sim_1/new/voting_proc_testbench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'voting_proc_testbench_1'
+INFO: [VRFC 10-3107] analyzing entity 'voting_proc_testbench_2'
+INFO: [VRFC 10-3107] analyzing entity 'voting_proc_testbench_3'
+INFO: [VRFC 10-3107] analyzing entity 'voting_proc_testbench_4'
+INFO: [VRFC 10-3107] analyzing entity 'voting_proc_testbench_5'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'voting_proc_testbench_5'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot voting_proc_testbench_5_behav xil_defaultlib.voting_proc_testbench_5 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot voting_proc_testbench_5_behav xil_defaultlib.voting_proc_testbench_5 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.pc_reg [pc_reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2to1_nbit [\mux_2to1_nbit(n=16)\]
+Compiling architecture behavioral of entity xil_defaultlib.next_pc_calc [next_pc_calc_default]
+Compiling architecture behavioral of entity xil_defaultlib.instruction_memory [instruction_memory_default]
+Compiling architecture behavioral of entity xil_defaultlib.control_unit [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.sign_extender_n_to_m [sign_extender_n_to_m_default]
+Compiling architecture behavioral of entity xil_defaultlib.stage_instruction_fetch_decode [\stage_instruction_fetch_decode(...]
+Compiling architecture behavioral of entity xil_defaultlib.reg_n [\reg_n(n=20)\]
+Compiling architecture behavioral of entity xil_defaultlib.flip [\flip(tag_size=8,key_size=20)\]
+Compiling module xil_defaultlib.swap(TAG_SIZE=8,RECORD_SIZE=16,S...
+Compiling architecture behavioural of entity xil_defaultlib.shift [\shift(tag_size=8,key_size=20)\]
+Compiling architecture behavioral of entity xil_defaultlib.XOR_stage [\XOR_stage(tag_size=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.tag_generator [\tag_generator(c=3,r=10,t=8,s=20...]
+Compiling architecture behavioral of entity xil_defaultlib.stage_tag_gen [\stage_tag_gen(c=3,r=10,t=8,s=20...]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2to1_nbit [\mux_2to1_nbit(n=10)\]
+Compiling architecture behavioral of entity xil_defaultlib.addr_calc [\addr_calc(c=3,r=10)\]
+Compiling architecture behavioral of entity xil_defaultlib.data_memory [\data_memory(c=3,r=10,t=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.stage_memory [\stage_memory(c=3,r=10,t=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.nbit_saturation_adder [\nbit_saturation_adder(n=18)\]
+Compiling architecture behavioral of entity xil_defaultlib.stage_write_back [\stage_write_back(c=3,r=10,t=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.voting_proc [\voting_proc(c=3,r=10,t=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.voting_proc_testbench_5
+Built simulation snapshot voting_proc_testbench_5_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1627.957 ; gain = 0.000
+set_property -name {xsim.simulate.runtime} -value {10000ns} -objects [get_filesets sim_1]
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'voting_proc_testbench_5'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj voting_proc_testbench_5_vlog.prj"
+"xvhdl --incr --relax -prj voting_proc_testbench_5_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'voting_proc_testbench_5'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot voting_proc_testbench_5_behav xil_defaultlib.voting_proc_testbench_5 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot voting_proc_testbench_5_behav xil_defaultlib.voting_proc_testbench_5 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2653.555 ; gain = 1.414
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property -name {xsim.simulate.runtime} -value {2 sec} -objects [get_filesets sim_1]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'voting_proc_testbench_5'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'voting_proc_testbench_5' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj voting_proc_testbench_5_vlog.prj"
+"xvhdl --incr --relax -prj voting_proc_testbench_5_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot voting_proc_testbench_5_behav xil_defaultlib.voting_proc_testbench_5 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot voting_proc_testbench_5_behav xil_defaultlib.voting_proc_testbench_5 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "voting_proc_testbench_5_behav -key {Behavioral:sim_1:Functional:voting_proc_testbench_5} -tclbatch {voting_proc_testbench_5.tcl} -view {C:/COMP3211/project/voting_proc_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/COMP3211/project/voting_proc_testbench_behav.wcfg
+source voting_proc_testbench_5.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2 sec
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:33 . Memory (MB): peak = 2653.555 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:15 ; elapsed = 00:00:35 . Memory (MB): peak = 2653.555 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:16 ; elapsed = 00:00:41 . Memory (MB): peak = 2653.555 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+set_property -name {xsim.simulate.runtime} -value {500ms} -objects [get_filesets sim_1]
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 17504 KB (Peak: 17504 KB), Simulation CPU Usage: 32686 ms
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'voting_proc_testbench_5'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'voting_proc_testbench_5' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj voting_proc_testbench_5_vlog.prj"
+"xvhdl --incr --relax -prj voting_proc_testbench_5_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot voting_proc_testbench_5_behav xil_defaultlib.voting_proc_testbench_5 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot voting_proc_testbench_5_behav xil_defaultlib.voting_proc_testbench_5 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "voting_proc_testbench_5_behav -key {Behavioral:sim_1:Functional:voting_proc_testbench_5} -tclbatch {voting_proc_testbench_5.tcl} -view {C:/COMP3211/project/voting_proc_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/COMP3211/project/voting_proc_testbench_behav.wcfg
+source voting_proc_testbench_5.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 500ms
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 2653.555 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 2653.555 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 2653.555 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 17544 KB (Peak: 17544 KB), Simulation CPU Usage: 12046 ms
+INFO: [Simtcl 6-16] Simulation closed
+set_property -name {xsim.simulate.runtime} -value {500us} -objects [get_filesets sim_1]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'voting_proc_testbench_5'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'voting_proc_testbench_5' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj voting_proc_testbench_5_vlog.prj"
+"xvhdl --incr --relax -prj voting_proc_testbench_5_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot voting_proc_testbench_5_behav xil_defaultlib.voting_proc_testbench_5 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot voting_proc_testbench_5_behav xil_defaultlib.voting_proc_testbench_5 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/COMP3211/project/project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "voting_proc_testbench_5_behav -key {Behavioral:sim_1:Functional:voting_proc_testbench_5} -tclbatch {voting_proc_testbench_5.tcl} -view {C:/COMP3211/project/voting_proc_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/COMP3211/project/voting_proc_testbench_behav.wcfg
+source voting_proc_testbench_5.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 500us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'voting_proc_testbench_5_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 500us
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 2653.555 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+archive_project C:/COMP3211/voting_proc.xpr.zip -temp_dir C:/COMP3211/project/.Xil/Vivado-25080-Michael-School -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/COMP3211/project/.Xil/Vivado-25080-Michael-School' for archiving project
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/COMP3211/project/project.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\COMP3211\project\project.srcs\sources_1\new\pc_reg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\COMP3211\project\project.srcs\sim_1\new\voting_proc_testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\COMP3211\project\project.srcs\sources_1\new\2to1_mux_nbit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\COMP3211\project\project.srcs\sources_1\new\pc_reg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\COMP3211\project\project.srcs\sources_1\new\pc_reg.vhd:]
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\COMP3211\project\project.srcs\sources_1\new\pc_reg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\COMP3211\project\project.srcs\sim_1\new\voting_proc_testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\COMP3211\project\project.srcs\sources_1\new\2to1_mux_nbit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\COMP3211\project\project.srcs\sources_1\new\2to1_mux_nbit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\COMP3211\project\project.srcs\sources_1\new\2to1_mux_nbit.vhd:]
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\COMP3211\project\project.srcs\sources_1\new\pc_reg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\COMP3211\project\project.srcs\sim_1\new\voting_proc_testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\COMP3211\project\project.srcs\sources_1\new\2to1_mux_nbit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\COMP3211\project\project.srcs\sources_1\new\pc_reg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\COMP3211\project\project.srcs\sources_1\new\pc_reg.vhd:]
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'utils_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'utils_1'
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\COMP3211\project\project.srcs\sources_1\new\pc_reg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\COMP3211\project\project.srcs\sim_1\new\voting_proc_testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\COMP3211\project\project.srcs\sources_1\new\2to1_mux_nbit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\COMP3211\project\project.srcs\sim_1\new\voting_proc_testbench.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\COMP3211\project\project.srcs\sim_1\new\voting_proc_testbench.vhd:]

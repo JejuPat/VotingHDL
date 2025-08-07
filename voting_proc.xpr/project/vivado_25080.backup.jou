@@ -1,0 +1,112 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Aug  7 10:10:17 2025
+# Process ID: 25080
+# Current directory: C:/COMP3211/project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6636 C:\COMP3211\project\project.xpr
+# Log file: C:/COMP3211/project/vivado.log
+# Journal file: C:/COMP3211/project\vivado.jou
+# Running On        :Michael-School
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+# CPU Frequency     :2112 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8396 MB
+# Swap memory       :13665 MB
+# Total Virtual     :22061 MB
+# Available Virtual :9578 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/COMP3211/project/project.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/COMP3211/project/voting_proc_testbench_behav.wcfg
+source voting_proc_testbench_3.tcl
+current_wave_config {voting_proc_testbench_behav.wcfg}
+log_wave {/voting_proc_testbench_3/r_CLOCK} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_testbench_3/r_CLOCK}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_testbench_3/r_reset}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_testbench_3/UUT/MEM_stall}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_testbench_3/UUT/record_tag_in}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_testbench_3/UUT/MEM/DMEM/vote_table}} 
+save_wave_config {C:/COMP3211/project/voting_proc_testbench_behav.wcfg}
+relaunch_sim
+save_wave_config {C:/COMP3211/project/voting_proc_testbench_behav.wcfg}
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top voting_proc_testbench_4 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+open_wave_config C:/COMP3211/project/voting_proc_testbench_behav.wcfg
+source voting_proc_testbench_4.tcl
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_testbench_4/r_CLOCK}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_testbench_4/r_reset}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_testbench_4/UUT/record_tag_in}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_testbench_4/UUT/MEM_stall}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_testbench_4/UUT/MEM/DMEM/vote_table}} 
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/COMP3211/project/voting_proc_testbench_behav.wcfg}
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top voting_proc_testbench_5 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+open_wave_config C:/COMP3211/project/voting_proc_testbench_behav.wcfg
+source voting_proc_testbench_5.tcl
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_testbench_5/r_CLOCK}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_testbench_5/r_reset}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_testbench_5/UUT/record_tag_in}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_testbench_5/UUT/MEM_stall}} 
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_testbench_5/UUT/MEM/DMEM/vote_table}} 
+relaunch_sim
+current_wave_config {voting_proc_testbench_behav.wcfg}
+add_wave {{/voting_proc_testbench_5/UUT/TAG/tag_gen/tag_out}} 
+relaunch_sim
+save_wave_config {C:/COMP3211/project/voting_proc_testbench_behav.wcfg}
+relaunch_sim
+set_property -name {xsim.simulate.runtime} -value {10000ns} -objects [get_filesets sim_1]
+relaunch_sim
+close_sim
+set_property -name {xsim.simulate.runtime} -value {2 sec} -objects [get_filesets sim_1]
+launch_simulation
+open_wave_config C:/COMP3211/project/voting_proc_testbench_behav.wcfg
+source voting_proc_testbench_5.tcl
+set_property -name {xsim.simulate.runtime} -value {500ms} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/COMP3211/project/voting_proc_testbench_behav.wcfg
+source voting_proc_testbench_5.tcl
+close_sim
+set_property -name {xsim.simulate.runtime} -value {500us} -objects [get_filesets sim_1]
+launch_simulation
+open_wave_config C:/COMP3211/project/voting_proc_testbench_behav.wcfg
+source voting_proc_testbench_5.tcl
+close_sim
+archive_project C:/COMP3211/voting_proc.xpr.zip -temp_dir C:/COMP3211/project/.Xil/Vivado-25080-Michael-School -force -include_local_ip_cache -include_config_settings

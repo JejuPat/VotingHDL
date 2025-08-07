@@ -1,0 +1,99 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Aug  8 02:41:50 2025
+| Host         : MSI running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file voting_proc_control_sets_placed.rpt
+| Design       : voting_proc
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    21 |
+|    Minimum number of control sets                        |    21 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    17 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    21 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    16 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              21 |           16 |
+| No           | No                    | Yes                    |              25 |           10 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             169 |           55 |
+| Yes          | Yes                   | No                     |              96 |           26 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------+------------------------------+------------------------------+------------------+----------------+--------------+
+|    Clock Signal   |         Enable Signal        |       Set/Reset Signal       | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------+------------------------------+------------------------------+------------------+----------------+--------------+
+|  bs_index_BUFG[1] |                              |                              |                5 |              6 |         1.20 |
+|  clk_IBUF_BUFG    | TAG/change_secret_curr       | reset_IBUF                   |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG    | debounced_button2            | reset_IBUF                   |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG    | debounced_button3            | reset_IBUF                   |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG    |                              |                              |               11 |             15 |         1.36 |
+|  clk_IBUF_BUFG    | MEM/debounced_button_reg     | reset_IBUF                   |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG    | WB/write_en_curr_reg_3[0]    | reset_IBUF                   |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG    | WB/write_en_curr_reg_7[0]    | reset_IBUF                   |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG    | WB/write_en_curr_reg_5[0]    | reset_IBUF                   |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG    | WB/write_en_curr_reg_0[0]    | reset_IBUF                   |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG    | WB/write_en_curr_reg_2[0]    | reset_IBUF                   |                6 |             16 |         2.67 |
+|  clk_IBUF_BUFG    | WB/write_en_curr_reg_6[0]    | reset_IBUF                   |                6 |             16 |         2.67 |
+|  clk_IBUF_BUFG    | WB/write_en_curr_reg_4[0]    | reset_IBUF                   |                7 |             16 |         2.29 |
+|  clk_IBUF_BUFG    | WB/write_en_curr_reg_1[0]    | reset_IBUF                   |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG    | debounce_counter3[0]_i_2_n_0 | debounce_counter3[0]_i_1_n_0 |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG    | debounce_counter2[0]_i_2_n_0 | debounce_counter2[0]_i_1_n_0 |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG    | debounce_counter4[0]_i_2_n_0 | debounce_counter4[0]_i_1_n_0 |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG    | debounce_counter5[0]_i_2_n_0 | debounce_counter5[0]_i_1_n_0 |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG    | debounce_counter[0]_i_2_n_0  | debounce_counter[0]_i_1_n_0  |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG    | MEM/E[0]                     | reset_IBUF                   |                5 |             19 |         3.80 |
+|  clk_IBUF_BUFG    |                              | reset_IBUF                   |               10 |             25 |         2.50 |
++-------------------+------------------------------+------------------------------+------------------+----------------+--------------+
+
+

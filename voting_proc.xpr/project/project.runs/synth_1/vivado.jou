@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Aug  7 10:02:43 2025
+# Process ID: 26412
+# Current directory: C:/COMP3211/project/project.runs/synth_1
+# Command line: vivado.exe -log voting_proc.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source voting_proc.tcl
+# Log file: C:/COMP3211/project/project.runs/synth_1/voting_proc.vds
+# Journal file: C:/COMP3211/project/project.runs/synth_1\vivado.jou
+# Running On        :Michael-School
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+# CPU Frequency     :2112 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8396 MB
+# Swap memory       :13665 MB
+# Total Virtual     :22061 MB
+# Available Virtual :7821 MB
+#-----------------------------------------------------------
+source voting_proc.tcl -notrace

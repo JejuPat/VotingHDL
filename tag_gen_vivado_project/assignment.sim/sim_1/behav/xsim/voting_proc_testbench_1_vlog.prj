@@ -1,6 +1,6 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
-"../../../../assignment.srcs/sources_1/imports/VotingHDL/swap.v" \
+"../../../../assignment.srcs/sources_1/imports/sources_1/imports/COMP3211/Labs/Lab 2/test/test.srcs/sources_1/imports/VotingHDL/swap.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"
